@@ -1,0 +1,198 @@
+
+.candidate-header {
+  width: 100%;
+  height: 90px;
+  padding: 0 40px 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.candidate-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 285px;
+}
+
+.candidate-logo {
+  width: 22px;
+  height: 22px;
+  background: #142e58;
+  border: 1px solid #466080;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.candidate-logo span {
+  font-size: 11px;
+}
+
+.candidate-brand-text h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.candidate-brand-text p {
+  font-size: 10px;
+  color: #f0f2f7;
+  margin-top: 3px;
+}
+.candidate-img-logo{
+    height: 40px;
+    width: 40px;
+}
+.candidate-search {
+  height: 41px;
+  max-width: 600px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #c8cbd0;
+  border-radius: 10px;
+  padding: 0 12px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+}
+.candidate-navbar-icons{
+    height:20px;
+    width: 20px;
+    
+}
+.candidate-search-icon {
+  font-size: 19px;
+  color: #6c737c;
+  margin-right: 8px;
+  transform: rotate(-20deg);
+}
+.candidate-searchbar-icon{
+    height: 20px;
+    width: 20px;
+}
+.candidate-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8px;
+  color: #333333;
+  height: 100%;
+  font-size: 12px;
+}
+
+.candidate-search input::placeholder {
+  color: #999999;
+  
+}
+
+.candidate-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 145px;
+  justify-content: flex-end;
+}
+
+.candidate-header-icon {
+  position: relative;
+  border: none;
+  background: transparent;
+  color: #111111;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+.candidate-header-icon small {
+  font-size: 7px;
+  font-weight: 700;
+  position: absolute;
+  top: 4px;
+  right: 1px;
+  background: white;
+}
+
+.candidate-notification-dot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #e24f4f;
+  border-radius: 50%;
+  top: 1px;
+  right: 1px;
+}
+
+.candidate-header-profile {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.candidate-dropdown-icon {
+  background: transparent;
+  border: none;
+  color: #111111;
+  font-size: 19px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+@media (max-width: 900px) {
+  .candidate-header {
+    padding: 0 18px;
+    gap: 12px;
+  }
+
+  .candidate-brand {
+    min-width: auto;
+  }
+
+  .candidate-brand-text h3 {
+    font-size: 9px;
+  }
+
+  .candidate-search {
+    max-width: 300px;
+  }
+
+  .candidate-header-actions {
+    gap: 9px;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .candidate-header {
+    height: auto;
+    min-height: 90px;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  .candidate-search {
+    order: 3;
+    flex-basis: 100%;
+    max-width: 100%;
+    height: 32px;
+  }
+
+  .candidate-header-actions {
+    margin-left: auto;
+  }
+
+  .candidate-brand-text h3 {
+    white-space: normal;
+  }
+}
